@@ -1,7 +1,10 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import FilterLink from '../containers/FilterLink'
 
 const Footer = () => (
   <p>
+    Show:
+    {" "}
     <FilterLink filter="SHOW_ALL">
       All
     </FilterLink>
@@ -11,7 +14,7 @@ const Footer = () => (
     </FilterLink>
     {", "}
     <FilterLink filter="SHOW_COMPLETED">
-      Done
+      Completed
     </FilterLink>
   </p>
 )
